@@ -5,7 +5,10 @@ b = torch.tensor(4.0, requires_grad= True)
 w = torch.tensor(5.0, requires_grad= True)
 u = w * x
 v = u + b
+
+# note
 a = torch.sigmoid(v)
+
 a.backward()
 
 def manual(x, b, w):

@@ -2,7 +2,10 @@ import torch
 
 x = torch.tensor(3.0, requires_grad= True)
 a = -(x ** 2) - (2 * x) - torch.sin(x)
+
+# note
 f = torch.exp(a)
+
 f.backward()
 
 def manual(x):
